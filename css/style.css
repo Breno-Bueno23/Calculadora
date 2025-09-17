@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'open sans';
+    src: url(../font/OpenSans.ttf);
+}
+
+body {
+    background-color: rgb(186, 190, 123);
+}
+
+.calculadora {
+    margin: auto;
+    width: max-content;
+    background-color: #24323d;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.tela {
+    width: 244px;
+    height: 50px;
+    margin-bottom: 10px;
+    text-align: right;
+    font-size: 30px;
+    color: black;
+}
+
+.btt {
+    cursor: pointer;
+    height: 50px;
+    margin: 5px;
+    font-size: 20px;
+    border: none;
+    border-radius: 90px;
+    font-family: 'open sans';
+    transition: 0.4s;
+}
+
+.btt:hover {
+    background-color: #f0f8ff;
+    color: #1c1c1d;
+}
+
+.small {
+    width: 50px;
+}
+
+.big {
+    width: 114px;
+}
+
+.op {
+    background-color: rgb(194, 147, 86);
+    color: #f0f8ff;
+    font-weight: bolder;
+}
+
+.com {
+    background-color: #cac9c9;
+}
+
+.num {
+    background-color: #6b6b77;
+    color: #f0f8ff;
+}
+
+.equal {
+    background-color: #4556b6;
+    color: #f0f8ff;
+}

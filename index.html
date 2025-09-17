@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/action.js" defer></script>
+</head>
+<body>
+    
+    <div class="calculadora">
+        <input type="text" class="tela" id="i_tela" disabled>
+
+        <div class="botoes">
+
+            <div class="row">
+                <button class="btt big com" onclick="limpar_tela()">C</button>
+                <button class="btt small com" onclick="apagar_ultimo()">CE</button>
+                <button class="btt small op" onclick="add_operador('/')">&divide;</button>
+            </div>
+
+            <div class="row">
+                <button class="btt small num" onclick="add_num(7)">7</button>
+                <button class="btt small num" onclick="add_num(8)">8</button>
+                <button class="btt small num" onclick="add_num(9)">9</button>
+                <button class="btt small op" onclick="add_operador('*')">&times;</button>
+            </div>
+
+            <div class="row">
+                <button class="btt small num" onclick="add_num(4)">4</button>
+                <button class="btt small num" onclick="add_num(5)">5</button>
+                <button class="btt small num" onclick="add_num(6)">6</button>
+                <button class="btt small op" onclick="add_operador('-')">-</button>
+            </div>
+
+            <div class="row">
+                <button class="btt small num" onclick="add_num(1)">1</button>
+                <button class="btt small num" onclick="add_num(2)">2</button>
+                <button class="btt small num" onclick="add_num(3)">3</button>
+                <button class="btt small op" onclick="add_operador('+')">+</button>
+            </div>
+
+            <div class="row">
+                <button class="btt small num" onclick="add_num(0)">0</button>
+                <button class="btt small num" onclick="add_ponto()">.</button>
+                <button class="btt big equal" onclick="calcular()">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
